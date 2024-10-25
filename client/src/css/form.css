@@ -1,0 +1,45 @@
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+.form{
+    justify-content: center;
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1pc;
+    background-color: aliceblue;
+    box-shadow: 0 0 0.5pc black;
+    margin :2pc auto;
+}
+#error{
+    background-color: rgb(210, 168, 168);
+    color: black;
+    text-align: center;
+    padding: 0.5pc;
+}
+.form input{
+    width: 90%;
+    height: 1.5pc;
+    margin-bottom: 1pc;
+}
+.form button{
+    width: 90%;
+    background-color: blue;
+    border: none;
+    color: white;
+    height: 2pc;
+    font-size: large;
+    cursor: pointer;
+}
+.formbutton:hover{
+    background-color: rgb(51, 51, 246);
+}
+.form a{
+    color: blue;
+    text-decoration: none;
+    font-size: larger;
+}
+.form p{
+    font-size: larger;
+}

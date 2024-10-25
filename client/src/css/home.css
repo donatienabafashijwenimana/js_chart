@@ -1,0 +1,373 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: arial;
+}
+
+.home-conatiner {
+  width: 100%;
+  height: 36.5pc;
+  display: flex;
+}
+.left {
+  width: 20%;
+  height: 100%;
+  background-color: rgb(223, 223, 244);
+  padding: 0.5pc;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  height: 2.5pc;
+  max-height: 2.5pc;
+  background-color: rgb(247, 247, 253);
+  padding: 0.5pc;
+  cursor: pointer;
+  display: flex;
+}
+.profile .pnames {
+  display: flex;
+  margin-left: 0.3pc;
+  flex-direction: column;
+}
+.profile .pic {
+  border-radius: 50%;
+  width: 2pc;
+  height: 2pc;
+  border: blue solid 0.1pc;
+}
+.left .search {
+  outline: none;
+  margin-top: 0.5pc;
+  height: 2pc;
+  font-weight: 100;
+  font-size: 1pc;
+  width: 100%;
+}
+.left .list-people {
+  display: flex;
+  margin-top: 0.5pc;
+  gap: 0.5pc;
+  flex-direction: column;
+  max-height: 28pc;
+  overflow-y: auto;
+}
+.left .header {
+  font-size: 1pc;
+}
+
+.nav {
+  background-color: rgb(227, 227, 230);
+  width: 12%;
+  gap: 1pc;
+  height: 90%;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  padding: 1pc;
+  padding-top: 3.2pc;
+}
+.nav .nav-item {
+  display: flex;
+  font-size: 1.7pc;
+  background-color: rgb(202, 202, 212);
+  padding: 0.4pc;
+  cursor: pointer;
+}
+.nav .nav-item:hover {
+  background-color: rgb(213, 213, 220);
+}
+.nav .nav-item .icon {
+  height: 1.5pc;
+  width: 1.5pc;
+  /* background-image: url('../icon/home_100px.png'); */
+  background-size: cover;
+}
+.right {
+  border-left: 0.1pc solid blue;
+  width: 65%;
+  background-color: rgb(224, 221, 221);
+  height: 100%;
+}
+.right .top1 {
+  width: 76.1%;
+  text-align: end;
+  position: absolute;
+  border-bottom: 0.1pc solid blue;
+  height: 3pc;
+  background-color: rgb(212, 212, 225);
+  padding-right: 2pc;
+}
+.right .top2 {
+  margin-top: 3pc;
+  height: 90%;
+  overflow-y: scroll;
+}
+
+/* messege section */
+
+.messege-body {
+  width: 98%;
+  margin-top: 0.5pc;
+  max-height: 75.5%;
+  height: 75%;
+  padding: 0.5pc;
+  background-color: rgb(205, 218, 218);
+  overflow-y: auto;
+}
+.messege-body2{
+  display: flex;
+  gap:0.5pc;
+  width: 100%;
+  flex-direction: column;
+}
+.messege-body .received-messege {
+  background-color: white;
+  height: auto;
+  font-family: Arial, sans-serif;
+  width: fit-content;
+  padding: 0.3pc;
+  max-width: 50%;
+  border-radius: 10px;
+  align-self: flex-start;
+  border-radius: 1pc;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.received-messege .time {
+  font-size: 0.7pc;
+  margin-top: 0.2pc;
+  text-align: end;
+  
+}
+.messege-body .send-messege {
+  background-color: rgb(86, 85, 85);
+  color: white;
+  font-family: Arial, sans-serif;
+  width: auto;
+  padding: 0.3pc;
+  align-self: self-end;
+  max-width: 50%;
+  border-radius: 1pc;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.send-messege .time {
+  font-size: 0.7pc;
+  color: white;
+  padding: 0.1pc;
+  text-align: end;
+ 
+  margin-top: 0.2pc;
+}
+.form-messege{
+  width: 100%;
+  height: 3pc;
+  display: flex;
+  align-items: center;
+}
+.form-messege .messegefield{
+  background-color: rgb(226, 226, 228);
+  color: black;
+  border: solid blue 0.1px;
+  margin: 0.4pc 0.4pc;
+  border-radius: 0.3pc;
+  padding: 0.2pc;
+  outline: none;
+  font-size: 1pc;
+  height: 2pc;
+  width: 87%;
+}
+.form-messege button{
+  background-color: blue;
+  height: 90%;
+  border: none;
+  width: 10%;
+  color: white;
+}
+/* the profile section */
+
+.image-profilep-setting{
+    width: 9pc;
+    margin-top: 1pc;
+    height: 9pc;
+    border: solid blue 0.1pc;
+    border-radius: 50%;
+}
+.image-profilep-setting .names{
+    background-color: blue;
+    font-size: 5pc;
+}
+
+/* css for home page section */
+
+.home{
+  margin: 5pc auto;
+  text-align: center;
+  font-size: 1.5pc;
+}
+
+/* css for profile section */
+.namesprofile{
+  width: 45%;
+  background-color: rgb(254, 255, 255);
+  padding: 1pc;
+  display: flex;
+  flex-direction: column;
+  gap: 1pc;
+  margin: 1pc auto;
+  text-align: left;
+  box-shadow: 0 0 10px blue;
+}
+.proedit{
+  background-color: blue;
+  border: none;
+  padding: 0.2pc;
+  width: 5pc;
+  height: 1.5pc;
+  font-size: 1pc;
+  color: white;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.proedit:hover{
+  background-color: rgb(84, 84, 238);
+}
+
+
+/* css for vodeo section */
+
+.videobody{
+  background-color: rgb(208, 208, 208);
+  width: 95%;
+  margin: 0pc auto;
+  height: 89%;
+  max-height: 89%;
+  overflow-y: auto;
+}
+
+/* css for video section */
+
+.post-conatiner{
+  padding: 0.2pc;
+  width: 70%;
+  height: auto;
+  max-height: 26pc;
+  box-shadow: 0 0 3px blue;
+  margin: 1pc auto;
+  background-color: white;
+}
+.createpost{
+  background-color: aqua;
+  width: auto;
+  cursor: pointer;
+  float: left;
+  padding: 3px;
+  margin-left: 52%;
+  margin-top: -2pc;
+  
+  position: absolute;
+  font-size: 1pc;
+}
+.newpostform{
+  padding: 0.2pc;
+  width: 59%;
+  height: 30pc;
+  box-shadow: 0 0 3px blue;
+  margin: 1pc auto;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.3pc;
+  align-content: center;
+}
+.newpostform form{
+  display: flex;
+  flex-direction: column;
+}
+input[type='file']{
+  background-color: rgb(206, 214, 214);
+  width: 80%;
+  height: 4pc;
+}
+.newpostform form textarea{
+  height: 5pc;
+  padding: 0.5pc;
+}
+.newpostform form button{
+  background-color: rgb(73, 73, 250);
+  border: none;
+  width: 50%;
+  margin: 1pc auto;
+  height: 2pc;
+  color: white;
+  font-size: 1.3pc;
+  cursor: pointer;
+
+}
+.close{
+  position: absolute;
+  float: right;
+  height: 1.5pc;
+  width: 1.5pc;
+  cursor: pointer;
+}
+.newpostform form button:hover{
+  background-color: rgb(103, 103, 180);
+}
+.newpostform  h3{
+  font-size: 2pc;
+}
+.newpostform  form label{
+  font-weight: 300;
+  margin-top: 2pc;
+}
+.newpostform form textarea,label,input,h3{
+  width: 80%;
+  align-self: center;
+}
+.settingpost{
+  margin-left: 74%;
+  font-size: 1pc;
+  height: 2.5pc;
+  height: 1.5pc;
+}
+.videoh{
+  margin-left: 2.5%;
+  font-size: 2pc;
+  margin-top: 1pc;
+}
+.content{
+  font-size: 0.8pc;
+  width: 98%;
+  margin: 1px auto;
+}
+.videopath{
+  width: 97%;
+  height: 17pc;
+  margin: 2px auto;
+  border: solid blue 1px;
+}
+.videoevent{
+  display: flex;
+  gap: 1pc;
+  width: 97%;
+  margin: 5px auto;
+  align-items: center;
+  height: 1.5pc;
+  /* background-color: rgb(199, 223, 223); */
+  padding: 0.2pc;
+}
+.videoevent p{
+  align-items: center;
+  display: flex;
+  gap: 2px;
+}
+.videoevent p img{
+  width: 1.5pc;
+  height: 1.5pc;
+  cursor: pointer;
+}
